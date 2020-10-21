@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursify</title>
+    <!-- <script type="text/javascript" src="jquerymin.js"></script> -->
+
+    <script src="https://kit.fontawesome.com/8089e2c9b1.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&family=Sansita+Swashed:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Sansita+Swashed:wght@500;800&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <!-- ************************************NAVBAR************************ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 30px; color: crimson;">COURSIFY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Study Materials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">NCERT solutions</a>
+                        <a class="dropdown-item" href="#">ICSE solutions</a>
+                        <a class="dropdown-item" href="#">CBSE previous years paper</a>
+                        <a class="dropdown-item" href="#">RD Sharma solutions</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Boards</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Exams
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">JEE-Mains</a>
+                        <a class="dropdown-item" href="#">IIT-JEE</a>
+                        <a class="dropdown-item" href="#">AIIMS</a>
+                        <a class="dropdown-item" href="#">JIPMER</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-success btn-sm">Sign up</button>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" id="searchstyle" placeholder="Search"
+                    aria-label="Search" />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchbtn">
+                    Search
+                </button>
+            </form>
+        </div>
+    </nav>
+    <!-- ***********************************JUMBOTRON****************** -->
+
+    <div class="jumbotron">
+        <div class="title">
+            <h1 class="display-4">
+                <p style="font-size: 34px; font-family: 'Lobster', cursive; font-size: 90px">Coursify</p>
+            </h1>
+        </div>
+        <p id="para" style="opacity: 1;"> " The best way to predict your future is to create it ."</p>
+        <hr class="my-4" />
+        <div class="block"></div>
+    </div>
+
+    <main id="firstmain">
+        <!-- <div class="top"> -->
+        <!-- <div class="container"> -->
+        <div class="lefttop">
+            Discover a new way of <span style="color: crimson">LEARNING .</span> <br /><br />
+            <p class="para1">Get your doubts clarified and attend LIVE classes in the language of your choice ....</p>
+
+            <div class="input-group" style="padding: 10px">
+                <input type="text" class="form-control" style="padding: 4px; aria-label =" Text input with dropdown
+                    button">
+                <div class="input-group-append">
+                    <button class="btn btn-dark btn-outline-danger dropdown-toggle" style="padding=4px" type="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Browse
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Exam prep</a>
+                        <a class="dropdown-item" href="#">Boards Related</a>
+                        <a class="dropdown-item" href="#">JEE Related</a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">NEET Related</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btnapp">
+                <a href="#"><img src="playstore.png"></a>
+            </div>
+
+        </div>
+
+        <div class="righttop">
+            <img class="img" src="courses.webp" />
+        </div>
+    </main>
+
+
+    <hr class="my-8">
+
+
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-around ">
+            <div class="card text-center" id="mecard" style="width: 16rem">
+                <div class="card-body">
+                    <h5 class="card-title" id="junior">LIVE Classes</h5>
+                    <p class="card-text">Learn live from the best tutors in INDIA .</p>
+                    <a href="#" class="btn btn-warning btn-sm" style="margin: 20px;">BOOK NOW</a>
+                </div>
+            </div>
+            <div class="card text-center" id="mecard" style="width: 16rem">
+                <div class="card-body">
+                    <h5 class="card-title" id="junior"> EARN CASH</h5>
+                    <p class="card-text">Ask doubts . Answer questions EARN MONEY ..</p>
+                    <a href="#" class="btn btn-warning btn-sm" style="margin: 20px;">EXPLORE</a>
+                </div>
+            </div>
+            <div class="card text-center" id="mecard" style="width: 16rem">
+                <div class="card-body">
+                    <h5 class="card-title" id="junior">EXAM PREPARATION</h5>
+                    <p class="card-text">JEE Mains <br> JEE Advanced <br> NEET </p>
+                    <a href="#" class="btn btn-warning btn-sm" style="margin: 20px;">EXPLORE</a>
+                </div>
+            </div>
+            <div class="card text-center" id="mecard" style="width: 16rem">
+                <div class="card-body">
+                    <h5 class="card-title" id="junior">SAMPLE TESTS</h5>
+                    <p class="card-text">Tests with detailes analysis national ranking.</p>
+                    <a href="#" class="btn btn-warning btn-sm" style="margin: 20px;">EXPLORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h4 class="pip" style="text-align: center; justify-content: center;"> Study material of various BOARDS ....
+        </h4>
+    </div>
+
+    <main id="secondmain">
+        <div class="a1"><i class="fas fa-book" style=" color: crimson;  font-size: 30px; padding: 20PX;"></i> ANDHRA
+            PRADESH </div>
+        <div class="a2"> <i style=" color: crimson;  font-size: 30px; padding: 20PX;" class="fas fa-book"></i>WEST
+            BENGAL</div>
+        <div class="a3"> <i style=" color: crimson;  font-size: 30px; padding: 20PX;" class="fas fa-book"></i>ARUNACHAL
+        </div>
+        <div class="a4"> <i class="fas fa-book" style=" color: crimson;  font-size: 30px; padding: 20PX;"></i>BIHAR
+        </div>
+        <div class="a5"> <i class="fas fa-book" style=" color: crimson;  font-size: 30px; padding: 20PX;"></i>ODISSA
+        </div>
+        <div class="a6"> <i style=" color: crimson;  font-size: 30px; padding: 20PX;" class="fas fa-book"></i> KASHMIR
+        </div>
+        <div class="a4"> <i class="fas fa-book" style=" color: crimson;  font-size: 30px; padding: 20PX;"> </i>JHARKHAND
+        </div>
+        <div class="a1"><i class="fas fa-book" style=" color: crimson;  font-size: 30px; padding: 20PX;"></i>
+            CHHATTISGARH </div>
+
+
+
+    </main>
+
+    <hr class="my-8">
+
+    <div class="row">
+        <h4 class="pip" style="text-align: center; justify-content: center;"> Exams that you can ace with COURSIFY ....
+        </h4>
+    </div>
+
+    <main id="thirdmain">
+        <div class="c1">
+            <div class="loadingdiv">
+                <div style="position:relative;top:20px;">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="searchbuttonstyle">Board
+                        Exams</button>
+                </div>
+            </div>
+        </div>
+        <div class="c2">
+            <div class="c1">
+                <div class="loadingdiv">
+                    <div style="position:relative;top:20px;">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="searchbuttonstyle">JEE
+                            Mains & Advances</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c3">
+            <div class="c1">
+                <div class="loadingdiv">
+                    <div style="position:relative;top:20px;">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"
+                            id="searchbuttonstyle">NEET</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- *************************  MIRGIN *******************************************  -->
+    <hr class="my-8">
+
+    <div class="row">
+        <h4 class="pip" style="text-align: center; justify-content: center;"> EXplore our subjects ....
+        </h4>
+    </div>
+
+    <main id="fourthmain">
+        <div>
+            <div class="loadingdiv">
+                <div style="position:relative;top:20px;">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"
+                        id="searchbuttonstyle">MATHEMATICS</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="loadingdiv">
+                <div style="position:relative;top:20px;">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"
+                        id="searchbuttonstyle">PHYSICS</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="loadingdiv">
+                <div style="position:relative;top:20px;">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit"
+                        id="searchbuttonstyle">CHEMISTRY</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="loadingdiv">
+                <div style="position:relative;top:20px;">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"
+                        id="searchbuttonstyle">BIOLOGY</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="loadingdiv">
+                <div style="position:relative;top:20px;">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                        id="searchbuttonstyle">COMMERCE</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="loadingdiv">
+                <div style="position:relative;top:20px;">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"
+                        id="searchbuttonstyle">SCIENCE</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="loadingdiv">
+                <div style="position:relative;top:20px;">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"
+                        id="searchbuttonstyle">CODING</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="loadingdiv">
+                <div style="position:relative;top:20px;">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"
+                        id="searchbuttonstyle">LANGUAGE</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="row">
+        <h4 class="pip" style="text-align: center; justify-content: center;"> free solutions ....
+        </h4>
+    </div>
+
+    
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-around ">
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="ncertsol.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="loadingdiv">
+                        <div style="position:relative;top:20px;">
+                            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"
+                                id="searchbuttonstyle">NCERT
+                                Solutions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="exa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="loadingdiv">
+                        <div style="position:relative;top:20px;">
+                            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"
+                                id="searchbuttonstyle">NCERT
+                                Exampler</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="refbook.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="loadingdiv">
+                    <div style="position:relative;top:20px;">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"
+                            id="searchbuttonstyle">Reference
+                            Books</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card" style="width: 18rem;">
+            <img src="material.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="loadingdiv">
+                    <div style="position:relative;top:20px;">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="searchbuttonstyle">Exam
+                            Prep
+                            Materials ...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+
+
+    <div>
+        <div class="loadingdiv">
+            <div style="position:relative;top:20px;">
+                <button class="btn btn-danger my-2 my-sm-0" type="submit" id="searchbuttonstyle">..DOWNLOAD THE
+                    APP
+                    NOW..</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+html {}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: inherit; */
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    color: black;
+}
+
+#searchbtn {
+    border-radius: 20px;
+}
+
+#searchstyle {
+    background-color: #f5f4b0;
+    border-radius: 20px;
+}
+
+.jumbotron {
+    background-image: linear-gradient(to right top, rgba(47, 88, 87, 0.6), rgba(231, 113, 125, 0.6), rgba(152, 241, 8, 0.4)), url("cover.jpg");
+    /* background-image: url('cover.jpg'); */
+    background-size: cover;
+    height: 450px;
+    /* opacity: .6; */
+}
+
+.title {
+    text-align: center;
+    margin: auto;
+}
+
+#para {
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    letter-spacing: .5px;
+    word-spacing: 7px;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin: auto;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Staatliches', cursive;
+}
+#junior{
+    color: forestgreen;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+p {
+    background: rgba(0, 0, 0, 0);
+    color: #000000;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.block {
+    width: auto;
+    height: 300px;
+}
+
+.container {
+    padding-bottom: 10px;
+    /* border: 2px dotted black; */
+}
+
+#firstmain {
+    width: 95%;
+    margin: 40px auto;
+    padding-bottom: 40px;
+    /* center */
+    /* border: 2px dotted black; */
+    color: rgb(27, 24, 26);
+    display: grid;
+    grid-template-rows: 350px;
+    grid-template-columns: /* 300px 300px */
+    1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    grid-auto-rows: 300px;
+}
+
+.lefttop {
+    /* background-color: rgb(212, 190, 182); */
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border: black 3px solid;
+}
+
+.para1 {
+    font-size: 16px;
+    color: black;
+    font-family: ;
+}
+
+.righttop {
+    background-color: yellowgreen;
+    /* background-image: url("top.jpg"); */
+}
+
+#mecard {
+    /* padding: 15px;
+margin: 10px; */
+}
+
+.selfcols {
+    padding: 10px;
+    margin: 2px 25px;
+    /* border: 2px dotted black; */
+}
+
+.pip {
+    text-align: center;
+    justify-content: center;
+    /* transform: translate(50% ,50%); */
+    padding: 20px;
+    font-size: 160%;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.1vw;
+    font-weight: bolder;
+    color: #7400b8;
+    background: linear-gradient(160deg, #7400b8, #80ffdb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.pip:after {
+    display: block;
+    height: 3px;
+    background-color: forestgreen;
+    content: "";
+    width: 12vw;
+    margin: 0 auto;
+    margin-top: 1vw;
+}
+
+#secondmain {
+    width: 95%;
+    margin: 30px auto;
+    /* border: 2px dotted black; */
+    color: rgb(27, 24, 26);
+    display: grid;
+    grid-template-rows: 60px 60px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: 60px;
+}
+
+.a1, .a2, .a3, .a4, .a5, .a6, .a4, .a8 {
+    font-size: 16px;
+    color: rgb(67, 102, 104);
+    font-weight: bold;
+    font-family: ;
+}
+
+#thirdmain {
+    width: 95%;
+    margin: 20px auto;
+    /* border: 2px dotted black; */
+    color: rgb(27, 24, 26);
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: 60px;
+}
+
+.loadingdiv {
+    width: auto;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+}
+
+#searchbuttonstyle {
+    border-radius: 20px;
+}
+
+#fourthmain {
+    width: 95%;
+    margin: 20px auto;
+    /* border: 2px dotted black; */
+    color: rgb(27, 24, 26);
+    display: grid;
+    grid-template-rows: 60px 60px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: 60px;
+}
+
+#fifthmain {
+    width: 95%;
+    margin: 20px auto;
+    /* border: 2px dotted black; */
+    color: rgb(27, 24, 26);
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: 60px;
+}
+
+.btnapp {
+    margin: 10px;
+    /* padding-top: 60px; */
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+}
